@@ -1,0 +1,177 @@
+
+
+.request_staff {
+    margin-top: 50px;
+    overflow-x: auto;
+
+    .request_staff_wrapper {
+        min-width: 100%;
+
+        .subtitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                font-weight: 500;
+                color: #344767;
+            }
+
+            .btn_add_staff {
+                background-color: #2B85EC;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                color: #fff;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: #5ca1f0;
+                    transition: 0.2s;
+                }
+
+                svg {
+                    color: #fff;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+
+        .select_department {
+            .select_option {
+                select {
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .table {
+            overflow-x: auto;
+
+            .table_info {
+                .custom_table {
+                    margin-top: 26px;
+                    min-width: 100%;
+                    width: 120%;
+                    table-layout: fixed;
+                    border-collapse: collapse;
+
+                    thead {
+                        width: 100%;
+                        tr {
+                            width: 100%;
+                            padding: 0 20px;
+
+                            span {
+                                color: #7c7373;
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .id_tb {
+                                width: 5%;
+                            }
+
+                            .name_tb {
+                                width: 26%;
+                            }
+
+                            .depart_tb {
+                                width: 20%;
+                            }
+
+                            .position_tb {
+                                width: 15%;
+                            }
+
+                            .date_tb {
+                                width: 10%;
+                            }
+
+                            .email_tb {
+                                width: 30%;
+                            }
+
+                            .gender_tb {
+                                width: 10%;
+                            }
+
+                            .phone_number_tb {
+                                width: 12%;
+                            }
+
+                            .address_tb {
+                                width: 20%;
+                            }
+
+                            .action_tb {
+                                width: 8%;
+                            }
+                        }
+                    }
+
+                    tbody {
+                        width: 100%;
+
+                        tr {
+                            &:hover {
+                                background-color: #ebebeb;
+                            }
+
+                            td {
+                                width: 100%;
+                                padding: 20px;
+                                border-bottom: 0.0625rem solid #f0f2f5;
+    
+                                span {
+                                    color: #7c7373;
+                                    font-size: 14px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    a {
+                                        svg {
+                                            width: 18px;
+                                            height: 18px;
+                                        }
+                                    }
+    
+                                    svg {
+                                        width: 18px;
+                                        height: 18px;
+                                    }
+                                }
+    
+                                .custom_btn {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    .delete {
+                                        svg {
+                                            width: 16px;
+                                            height: 16px;
+                                            cursor: pointer;
+                                            color: #ec652b;
+                                        }
+                                    }                                
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .paginnate {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

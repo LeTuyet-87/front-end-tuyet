@@ -1,0 +1,169 @@
+.request_staff {
+    margin-top: 50px;
+    overflow-x: auto;
+
+    .request_staff_wrapper {
+        min-width: 100%;
+
+        .select_department {
+            .select_option {
+                select {
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .subtitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                font-weight: 500;
+                color: #344767;
+            }
+
+            .btn_add_staff {
+                background-color: #2B85EC;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                color: #fff;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: #5ca1f0;
+                    transition: 0.2s;
+                }
+
+                svg {
+                    color: #fff;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+
+        .table {
+            overflow-x: auto;
+
+            .table_info {
+                .custom_table {
+                    margin-top: 26px;
+                    min-width: 100%;
+                    width: 100%;
+                    table-layout: fixed;
+                    border-collapse: collapse;
+
+                    thead {
+                        width: 100%;
+                        tr {
+                            width: 100%;
+                            height: 50px;
+
+                            span {
+                                color: #7c7373;
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .id_tb {
+                                width: 5%;
+                            }
+
+                            .item_tb {
+                                width: 18%;
+                            }
+
+                            .name_tb {
+                                width: 13%;
+                            }
+
+                            .day_tb {
+                                width: 10%;
+                            }
+
+                            .hour_tb {
+                                width: 10%;
+                            }
+
+                            .day_off_tb {
+                                width: 10%;
+                            }
+
+                            .total_tb {
+                                width: 10%;
+                            }
+
+                            .evalute_tb {
+                                width: 10%;
+                            }
+
+                            .note_tb {
+                                width: 14%;
+                            }
+                        }
+                    }
+
+                    tbody { 
+                        width: 100%;
+
+                        tr {
+                            &:hover {
+                                background-color: #ebebeb;
+                            }
+
+                            td {
+                                width: 100%;
+                                padding: 20px;
+                                border-bottom: 0.0625rem solid #f0f2f5;
+    
+                                span {
+                                    color: #7c7373;
+                                    font-size: 14px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    a {
+                                        svg {
+                                            width: 18px;
+                                            height: 18px;
+                                        }
+                                    }
+    
+                                    svg {
+                                        width: 18px;
+                                        height: 18px;
+                                    }
+                                }
+    
+                                textarea {
+                                    width: 130px;
+                                    padding: 10px;
+                                    color: #7c7373;
+                                    border-radius: 3px;
+                                    border: 1px solid #7c7373;
+                                    outline: #7c7373;
+                                }
+
+                                .textarea_evalute {
+                                    width: 80px;
+                                    color: #7c7373;
+                                    border-radius: 3px;
+                                    border: 1px solid #7c7373;
+                                    outline: #7c7373;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
